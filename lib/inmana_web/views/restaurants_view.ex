@@ -4,7 +4,7 @@ defmodule InmanaWeb.RestaurantView do
   def render("create.json", %{restaurant: restaurant}) do
     %{
       message: "Restaurant created!",
-      retaurant: Jason.encode(restaurant)
+      retaurant: restaurant
     }
   end
 end

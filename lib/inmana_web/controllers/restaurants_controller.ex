@@ -3,7 +3,7 @@ defmodule InmanaWeb.RestaurantController do
 
   alias Inmana.Restaurant
 
-  alias Inmana.FallbackController
+  alias InmanaWeb.FallbackController
 
   action_fallback FallbackController
 
