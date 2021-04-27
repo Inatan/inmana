@@ -2,7 +2,7 @@ defmodule InmanaWeb.RestaurantsControllerTest do
   use InmanaWeb.ConnCase
 
   describe "create/2" do
-    test "when all params are valid,  creates the user", %{conn: conn} do
+    test "when all params are valid,  creates the restaurant", %{conn: conn} do
       params = %{name: "Siri cascudo", email: "siri@cascudo.com.br"}
 
       response =
@@ -20,7 +20,7 @@ defmodule InmanaWeb.RestaurantsControllerTest do
              } = response
     end
 
-    test "when are invalid params,  return erro", %{conn: conn} do
+    test "when are invalid params,  returns erro", %{conn: conn} do
       params = %{email: "siri@cascudo.com.br"}
 
       expected_response = %{"message" => %{"name" => ["can't be blank"]}}
