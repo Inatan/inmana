@@ -28,5 +28,6 @@ defmodule Inmana.Supply do
     |> validate_required(@require_paramers)
     |> validate_length(:description, min: 3)
     |> validate_length(:responsible, min: 3)
+    |> foreign_key_constraint(:restaurant_id)
   end
 end
